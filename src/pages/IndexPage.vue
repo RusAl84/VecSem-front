@@ -9,9 +9,19 @@
 </template>
 
 <script>
+import { VNetworkGraph } from "v-network-graph"
+import "v-network-graph/lib/style.css"
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  data() {
+    return {
+      file: ""}},
+  methods: {
+    handleFileUpload() {
+      this.file = "";
+    }
+  }
 })
 </script>
